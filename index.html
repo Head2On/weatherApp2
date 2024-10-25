@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="icon" href="assets/wetherapp.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <!-- Load Material Symbols once -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+    <main class="main-container">
+        <header class="input-container">
+            <input class="city-input" placeholder="Search City" type="text">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
+        </header>
+
+        <section class="weather-info" style="display: none;">
+            <div class="location-date-cointainer">
+                <div class="location">
+                    <span class="material-symbols-outlined">
+                        location_on
+                    </span>
+                    <h4 class="country-text ">Simla</h4>
+                </div>
+                <h5 class="current-date-text regular-txt">thu, 24 Oct</h4>
+            </div>
+
+            <div class="weather-summary-container">
+                <img src="assets/weather/cloudy.svg" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="temp-text">29 °C</h1>
+                    <h3 class="condition-txt">Clouds</h3>
+                </div>
+            </div>
+
+            <div class="weather-conditions-container">
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        water_drop
+                    </span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">Humidity</h5>
+                        <h5 class="humidity-value-txt">40%</h5>
+                    </div>
+                </div>
+         
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">
+                        air
+                    </span>
+                    <div class="condition-info">
+                        <h5 class="regular-txt">wind speed</h5>
+                        <h5 class="wind-value-txt">16 M/s</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-items-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-data regular-txt">25 Oct</h5>
+                    <img src="assets/weather/thunderstorm.svg"class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-data regular-txt">25 Oct</h5>
+                    <img src="assets/weather/thunderstorm.svg"class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-data regular-txt">25 Oct</h5>
+                    <img src="assets/weather/thunderstorm.svg"class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-data regular-txt">25 Oct</h5>
+                    <img src="assets/weather/thunderstorm.svg"class="forecast-item-img">
+                    <h5 class="forecast-item-temp">29 °C</h5>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="search-city section-message">
+            <img src="assets/message/search.png" class="message-img">
+            <div>
+                <h1>Serach City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather condition of the city
+                </h4>
+            </div>
+        </section>
+
+        <section class="not-found section-message">
+            <img src="assets/message/error.png" class="message-img">
+            <div>
+                <h1>Sorry!</h1>
+                <h4 class="regular-txt">
+                    page not found
+                </h4>
+            </div>
+        </section>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+</html>
